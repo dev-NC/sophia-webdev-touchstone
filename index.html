@@ -13,11 +13,13 @@
 
 <body>
     <header>
-        <div class="flex-container">
-            <img src="resources/logo.png" height="200" width="200" alt="Book Haven Bookstore">
-            <h1>Home page</h1>
+        <div class="header-upper">
+            <img src="resources/logo.png" alt="Book Haven Bookstore">
+            <h1 class="client-name">Book Haven Bookstore</h1>
+        </div>
+        <div class="header-lower">
             <nav>
-                <a href="index.html" aria-current="page">Home</a>
+                <h2 class="current-page">Home</h2>
                 <a href="gallery.html">Gallery</a>
                 <a href="about.html">About Us</a>
                 <a href="custom.html">Custom</a>
@@ -27,26 +29,45 @@
     </header>
     <main>
         <section class="promo-section">
-            <img src="resources/promo.png" alt="Front cover of Sorcerer's Shadowed Chronicles; A fantasy book.">
-            <p>Packed with twists and unforgettable heart. Available now!</p>
+            <div class="promo-image">
+                <img src="resources/promo.png" alt="Front cover of Sorcerer's Shadowed Chronicles; A fantasy book.">
+            </div>
+            <div class="promo-content">
+                <h2>Sorcerer's Shadowed Chronicles</h2>
+                <p>Packed with twists and unforgettable heart.</p>
+                <a href="#" class="cta-button">Claim Your Copy</a>
+            </div>
         </section>
         <section class="category-section">
             <h2>Books</h2>
             <div class="flex-container">
                 <div class="product">
-                    <img src="resources/book1.png" alt="Front cover of Brie Mine 4Ever; A book for cheese lovers.">
-                    <h4>Brie Mine 4Ever</h4>
-                    <p> A book for cheese lovers.</p>
+                    <div class="product-image">
+                        <img src="resources/book1.png" alt="Front cover of Brie Mine 4Ever; A book for cheese lovers.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Brie Mine 4Ever</h4>
+                        <p> A book for cheese lovers.</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/book2.png" alt="Front cover of Glory Riders; A book about bikers.">
-                    <h4>Glory Riders</h4>
-                    <p>A book about bikers.</p>
+                    <div class="product-image">
+                        <img src="resources/book2.png" alt="Front cover of Glory Riders; A book about bikers.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Glory Riders</h4>
+                        <p>A book about bikers.</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/book3.png" alt="Front cover of Sorcerer's Shadowed Chronicles; A fantasy book.">
-                    <h4>Sorcerer's Shadowed Chronicles</h4>
-                    <p>A fantasy book.</p>
+                    <div class="product-image">
+                        <img src="resources/book3.png"
+                            alt="Front cover of Sorcerer's Shadowed Chronicles; A fantasy book.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Sorcerer's Shadowed Chronicles</h4>
+                        <p>A fantasy book.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,52 +75,97 @@
             <h2>Magazines</h2>
             <div class="flex-container">
                 <div class="product">
-                    <img src="resources/magazine1.png" alt="Front cover of Ball; A magazine about pickleball.">
-                    <h4>Ball</h4>
-                    <p>A magazine about pickleball.</p>
+                    <div class="product-image">
+                        <img src="resources/magazine1.png" alt="Front cover of Ball; A magazine about pickleball.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Ball</h4>
+                        <p>A magazine about pickleball.</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/magazine2.png"
-                        alt="Front cover of Travel; Front cover of Travel; A magazine for travelers.">
-                    <h4>Travel</h4>
-                    <p>A magazine for travelers</p>
+                    <div class="product-image">
+                        <img src="resources/magazine2.png"
+                            alt="Front cover of Travel; Front cover of Travel; A magazine for travelers.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Travel</h4>
+                        <p>A magazine for travelers</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/magazine3.png" alt="Front cover of Eat; A magazine for foodies.">
-                    <h4>Eat</h4>
-                    <p>A magazine for foodies.</p>
+                    <div class="product-image">
+                        <img src="resources/magazine3.png" alt="Front cover of Eat; A magazine for foodies.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Eat</h4>
+                        <p>A magazine for foodies.</p>
+                    </div>
                 </div>
         </section>
         <section class="category-section">
             <h2>Accessories</h2>
             <div class="flex-container">
                 <div class="product">
-                    <img src="resources/toteBag.png"
-                        alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ.">
-                    <h4>Canvas Tote Bag</h4>
-                    <p>High quality tote bag.</p>
+                    <div class="product-image">
+                        <img src="resources/toteBag.png"
+                            alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Canvas Tote Bag</h4>
+                        <p>High quality tote bag.</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/notebook.png"
-                        alt="A notebook with text on the cover that says Book Haven Bookstore.">
-                    <h4>Notebook</h4>
-                    <p>Official Book Haven Bookstore notebook.</p>
+                    <div class="product-image">
+                        <img src="resources/notebook.png"
+                            alt="A notebook with text on the cover that says Book Haven Bookstore.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Notebook</h4>
+                        <p>Official Book Haven Bookstore notebook.</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="resources/stickers.png"
-                        alt="A set of four Book Haven Bookstore stickers that promote reading.">
-                    <h4>Stickers</h4>
-                    <p>Official Book Haven Bookstore stickers.</p>
+                    <div class="product-image">
+                        <img src="resources/stickers.png"
+                            alt="A set of four Book Haven Bookstore stickers that promote reading.">
+                    </div>
+                    <div class="product-content">
+                        <h4>Stickers</h4>
+                        <p>Official Book Haven Bookstore stickers.</p>
+                    </div>
                 </div>
+            </div>
         </section>
         <section class="values-section">
-            <h2>H2 Values</h2>
-            <div class="value">Community - a warm, inclusive gathering space.</div>
-            <div class="value">Curiosity - to inspire lifelong learning.</div>
-            <div class="value">Connection - to bring people together through the joy of reading.</div>
-            <div class="value">Discovery - to help visitors find the perfect next book.</div>
-            <div class="value">Sustainability - to promote environmental friendly practices.</div>
-            <div class="value">Inclusion - to promote diverse stories and rich cultures.</div>
+            <h2>Our Core Values</h2>
+            <ul class="values-grid">
+                <li class="value-card">
+                    <h3>Community</h3>
+                    <p>A warm, inclusive gathering space.</p>
+                </li>
+                <li class="value-card">
+                    <h3>Curiosity</h3>
+                    <p>To inspire lifelong learning.</p>
+                </li>
+                <li class="value-card">
+                    <h3>Connection</h3>
+                    <p>To bring people together through the joy of reading.</p>
+                </li>
+                <li class="value-card">
+                    <h3>Discovery</h3>
+                    <p>To help visitors find the perfect next book.</p>
+                </li>
+                <li class="value-card">
+                    <h3>Sustainability</h3>
+                    <p>To promote environmental friendly practices.</p>
+                </li>
+                <li class="value-card">
+                    <h3>Inclusion</h3>
+                    <p>To promote diverse stories and rich cultures.</p>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
