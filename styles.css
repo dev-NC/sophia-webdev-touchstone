@@ -196,6 +196,7 @@ footer .flex-container {
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem 2rem;
+    border: none;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -258,6 +259,15 @@ footer .flex-container {
 .product-content p {
     font-size: 1.25rem;
     margin-bottom: 0;
+}
+
+.product-content .add-to-cart-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
 }
 
 .values-section {
