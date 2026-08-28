@@ -317,14 +317,21 @@ footer .flex-container {
     margin: 2rem auto;
 }
 
-.about-us-content {
-    width: 100%;
+.about-section .flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.bottom-container {
-    width: 100%;
+.about-us-content {
+    flex: 1
+}
+
+.about-section .right-column {
     display: flex;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
 }
 
 .business-hours-content,
@@ -348,7 +355,8 @@ footer .flex-container {
 }
 
 .contact-us-content .name-label,
-.contact-us-content .email-label {
+.contact-us-content .email-label,
+.contact-us-content .feedback-label {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -361,6 +369,14 @@ footer .flex-container {
     border-radius: 4px;
     margin-top: 0.25rem;
     padding: 0.5rem 1rem;
+}
+
+.contact-us-content textarea {
+    max-width: 300px;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    resize: vertical;
 }
 
 .contact-us-bottom {
