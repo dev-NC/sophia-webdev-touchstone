@@ -321,10 +321,12 @@ footer .flex-container {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
+    margin: 0 auto;
+    margin: 0 auto;
 }
 
 .about-us-content {
-    flex: 1
+    flex: 1;
 }
 
 .about-section .right-column {
