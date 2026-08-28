@@ -33,38 +33,43 @@
         <section class="about-section">
             <div class="flex-container">
                 <div class="about-us-content">
-                    <h2>H2 About Us</h2>
+                    <h2>About Us</h2>
                     <p>Your cozy neighborhood sanctuary for stories, connections, and discovery! Grab a cup of coffeee
                         and let us help you find your next great adventure!</p>
                 </div>
-                <div class="business-hours-content">
-                    <h2>H2 Business Hours</h2>
-                    <div>Monday - Friday: 9:00 AM - 7:00 PM</div>
-                    <div>Saturday: 10:00 AM - 6:00 PM</div>
-                    <div>Sunday: 11:00 AM - 5:00 PM</div>
-                </div>
-                <div class="contact-us-content">
-                    <h2>H2 Contact Us</h2>
-                    <form action="" method="post" id="contact-us-form">
-                        <div>
-                            <label>Name:
+                <div class="bottom-container">
+                    <div class="business-hours-content">
+                        <h2>Business Hours</h2>
+                        <dl class="business-hours-grid">
+                            <dt>Monday - Friday:</dt>
+                            <dd>9:00 AM - 7:00 PM</dd>
+                            <dt>Saturday:</dt>
+                            <dd>10:00 AM - 6:00 PM</dd>
+                            <dt>Sunday:</dt>
+                            <dd>11:00 AM - 5:00 PM</dd>
+                        </dl>
+                    </div>
+                    <div class="contact-us-content">
+                        <h2>Contact Us</h2>
+                        <form action="" method="post" id="contact-us-form">
+                            <label class="name-label">Name
                                 <input type="text" name="name" required>
                             </label>
-                        </div>
-                        <div>
-                            <label>Email:
+                            <label class="email-label">Email
                                 <input type="email" name="email" required>
                             </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="checkbox">
-                                Custom Order
-                            </label>
-                            <input type="reset" value="Clear">
-                            <input type="submit" value="Submit">
-                        </div>
-                    </form>
+                            <div class="contact-us-bottom">
+                                <label>
+                                    <input type="checkbox" name="checkbox">
+                                    Custom Order
+                                </label>
+                                <div class="contact-us-buttons">
+                                    <input type="reset" value="Clear">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
