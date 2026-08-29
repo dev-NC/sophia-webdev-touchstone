@@ -1,0 +1,56 @@
+@layer root;
+
+@import "root.css" layer(root);
+
+.promo-section {
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.promo-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.promo-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promo-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.promo-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+}

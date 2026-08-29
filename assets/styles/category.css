@@ -1,0 +1,73 @@
+@layer root;
+
+@import "root.css" layer(root);
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    margin: 2rem auto;
+}
+
+.category-section h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+
+.category-section .flex-container {
+    display: flex;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.product-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.product-details h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 0.5;
+    margin-bottom: 0;
+}
+
+.product-details p {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.product-content .add-to-cart-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    align-self: flex-end;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+}

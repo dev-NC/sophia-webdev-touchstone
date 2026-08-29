@@ -1,0 +1,77 @@
+@layer root;
+
+@import "root.css" layer(root);
+
+footer {
+    border-top: 2px solid black;
+}
+
+footer .flex-container {
+    max-width: var(--max-width);
+    display: flex;
+    margin: 0 auto;
+    padding: 8px 16px;
+}
+
+.footer-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+.footer-newsletter {
+    margin-bottom: 1rem;
+}
+
+.footer-newsletter h2 {
+    font-size: 1.5rem;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.footer-newsletter label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input[type="email"] {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+.footer-newsletter input[type="submit"] {
+    padding: 0.5rem 1rem;
+    align-self: flex-end;
+}
+
+.footer-socials .fa-square-twitter,
+.footer-socials .fa-square-instagram {
+    font-size: 3rem;
+}

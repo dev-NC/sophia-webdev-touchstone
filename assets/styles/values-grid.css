@@ -1,0 +1,43 @@
+@layer root;
+
+@import "root.css" layer(root);
+
+.values-section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.values-section h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.value-card {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.value-card h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p {
+    line-height: 1.6;
+    margin: 0;
+}
