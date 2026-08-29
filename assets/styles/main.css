@@ -1,6 +1,7 @@
-@layer root, header, footer, promo, category, card, product, values-grid, about;
+@layer root, font, header, footer, promo, category, card, product, values-grid, about;
 
 @import "root.css" layer(root);
+@import "font.css" layer(font);
 @import "header.css" layer(header);
 @import "footer.css" layer(footer);
 @import "promo.css" layer(promo);
