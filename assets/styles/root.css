@@ -1,12 +1,21 @@
 :root {
+    --max-width: 1280px;
+
+    /* main color palette */
     --midnight-manuscript: #2E2E4E;
     --regal-quill: #5C2E5C;
     --literature-blue: #3F5461;
     --book-worm: #3E5641;
     --romantic-red: #742C36;
 
-    --max-width: 1280px;
+    /* other colors */
+    --bookish-black: #131C26;
+    --alabaster: #F2F0EB;
 
+    /* fonts */
+    --default-font-color: var(--bookish-black);
+
+    /* shadows */
     --shadow-sm: 0px 8px 16px rgba(0, 0, 0, 0.16);
 }
 
@@ -16,4 +25,5 @@
 
 html {
     font-size: 62.4%;
+    color: var(--default-font-color);
 }
