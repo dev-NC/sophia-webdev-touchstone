@@ -1,16 +1,22 @@
 :root {
     --max-width: 1280px;
 
-    /* main color palette */
+    /* palette */
     --midnight-manuscript: #2E2E4E;
     --regal-quill: #5C2E5C;
     --literature-blue: #3F5461;
     --book-worm: #3E5641;
     --romantic-red: #742C36;
 
-    /* other colors */
     --bookish-black: #131C26;
     --alabaster: #F2F0EB;
+
+    /* colors */
+    --main-background-color: var(--alabaster);
+    --primary-color: var(--book-worm);
+    --hover-color: var(--midnight-manuscript);
+    --highlight-color: var(--literature-blue);
+    --link-hover-color: var(--regal-quill);
 
     /* fonts */
     --default-font-color: var(--bookish-black);
@@ -49,6 +55,11 @@
 
     /* shadows */
     --shadow-sm: 0px 8px 16px rgba(0, 0, 0, 0.16);
+    --shadow-vsm: 0px 4px 8px rgba(0, 0, 0, 0.12);
+
+    /* animation */
+    --simple-transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    --simple-transform: translateY(-1px);
 }
 
 * {
@@ -58,4 +69,5 @@
 html {
     font-size: 62.4%;
     color: var(--default-font-color);
+    background-color: var(--main-background-color);
 }

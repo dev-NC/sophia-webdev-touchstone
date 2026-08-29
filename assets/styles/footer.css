@@ -32,6 +32,11 @@ footer .flex-container {
 
 .footer-nav a {
     text-decoration: none;
+    color: var(--highlight-color);
+}
+
+.footer-nav a:hover {
+    color: var(--link-hover-color);
 }
 
 .footer-newsletter {
@@ -62,16 +67,40 @@ footer .flex-container {
     padding: 0.5rem 1rem;
 }
 
-.footer-socials {
-    display: flex;
+.footer-newsletter input[type="submit"] {
+    align-self: flex-end;
+    padding: 0.75rem 1.5rem;
+    background: var(--default-font-color);
+    color: var(--main-background-color);
+    border: none;
+    border-radius: 4px;
+    transition: var(--simple-transition);
+    box-shadow: var(--shadow-vsm);
 }
 
-.footer-newsletter input[type="submit"] {
-    padding: 0.5rem 1rem;
-    align-self: flex-end;
+.footer-newsletter input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-sm);
+}
+
+.footer-socials {
+    display: flex;
+    margin-left: -0.5rem;
 }
 
 .footer-socials .fa-square-twitter,
 .footer-socials .fa-square-instagram {
     font-size: 3rem;
+    transition: var(--simple-transition);
+    box-shadow: var(--shadow-vsm);
+}
+
+.footer-socials .fa-square-twitter:hover,
+.footer-socials .fa-square-instagram:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-sm);
 }

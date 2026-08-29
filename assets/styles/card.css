@@ -9,6 +9,12 @@
     margin: 0 auto;
     padding: 3rem;
     border-radius: 1rem;
+    transition: var(--simple-transition);
+}
+
+.card:hover {
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-vsm);
 }
 
 .card-image {

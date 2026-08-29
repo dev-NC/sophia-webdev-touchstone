@@ -3,7 +3,7 @@
 @import "root.css" layer(root);
 
 header {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid;
 }
 
 header .flex-container {
@@ -23,10 +23,13 @@ header .flex-container {
 .header-upper img {
     height: 64px;
     width: auto;
+    mix-blend-mode: multiply;
 }
 
 .header-upper h1 {
-    font-size: 4rem;
+    font-family: var(--font-display);
+    font-weight: var(--font-display-weight);
+    font-size: var(--font-display-size);
     text-align: left;
     flex: 1;
     margin: 0 1.5rem;
@@ -42,18 +45,39 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
+    font-size: var(--font-subtitle-size);
 }
 
 nav h2 {
-    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: underline;
     margin: 0 1.5rem;
 }
 
 nav a {
-    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--highlight-color);
     margin: 0 1.5rem;
 }
 
+nav a:hover {
+    color: var(--link-hover-color);
+}
+
 .header-lower .fa-cart-shopping {
-    font-size: 1.5rem;
+    font-size: var(--font-subtitle-size);
+    transition: var(--simple-transition);
+    box-shadow: var(--shadow-vsm);
+
+}
+
+.header-lower .fa-cart-shopping:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-sm);
 }

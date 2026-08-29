@@ -29,7 +29,12 @@
 .value-card {
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: var(--shadow-sm);
+    transition: var(--simple-transition);
+}
+
+.value-card:hover {
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-vsm);
 }
 
 .value-card h3 {

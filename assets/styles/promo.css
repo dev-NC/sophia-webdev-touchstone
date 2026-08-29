@@ -10,6 +10,12 @@
     margin: 2rem auto;
     padding: 3rem;
     border-radius: 1rem;
+    transition: var(--simple-transition);
+}
+
+.promo-section:hover {
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-vsm);
 }
 
 .promo-image {
@@ -45,12 +51,20 @@
 
 .cta-button {
     display: inline-block;
-    background: black;
-    color: white;
+    background: var(--primary-color);
+    color: var(--main-background-color);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
+    transition: var(--simple-transition);
+    box-shadow: var(--shadow-vsm);
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-sm);
 }

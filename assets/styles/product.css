@@ -3,10 +3,19 @@
 @import "root.css" layer(root);
 
 .add-to-cart-btn {
-    font-size: 1rem;
-    font-weight: 700;
     align-self: flex-end;
+    background: var(--main-background-color);
     padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    transition: var(--simple-transition);
+    box-shadow: var(--shadow-vsm);
+}
+
+.add-to-cart-btn:hover {
+    cursor: pointer;
+    color: var(--main-background-color);
+    background-color: var(--hover-color);
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-sm);
 }
