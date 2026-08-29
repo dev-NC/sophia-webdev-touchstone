@@ -15,6 +15,38 @@
     /* fonts */
     --default-font-color: var(--bookish-black);
 
+    --font-display: 'Courier New', Courier, monospace;
+    --font-display-weight: bold;
+    --font-display-size: 40px;
+
+    --font-title-large: Georgia, 'Times New Roman', Times, serif;
+    --font-title-large-weight: bold;
+    --font-title-large-size: 30px;
+
+    --font-title: Arial, Helvetica, sans-serif;
+    --font-title-weight: bold;
+    --font-title-size: 25px;
+
+    --font-subtitle: Arial, Helvetica, sans-serif;
+    --font-subtitle-weight: bold;
+    --font-subtitle-size: 15px;
+
+    --font-body-large: "Comic Sans MS", "Comic Sans", cursive;
+    --font-body-large-weight: normal;
+    --font-body-large-size: 20px;
+
+    --font-body-strong: Arial, Helvetica, sans-serif;
+    --font-body-strong-weight: bold;
+    --font-body-strong-size: 16px;
+
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-body-weight: normal;
+    --font-body-size: 16px;
+
+    --font-captions: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-captions-weight: normal;
+    --font-captions-size: 11px;
+
     /* shadows */
     --shadow-sm: 0px 8px 16px rgba(0, 0, 0, 0.16);
 }
