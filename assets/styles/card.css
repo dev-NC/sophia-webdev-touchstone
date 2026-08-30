@@ -40,13 +40,17 @@
 }
 
 .card-details h4 {
-    font-size: 2rem;
-    font-weight: 800;
+    font-family: var(--font-body-strong);
+    font-weight: var(--font-body-strong-weight);
+    font-size: var(--font-body-strong-size);
     line-height: 0.5;
     margin-bottom: 0;
 }
 
 .card-details p {
-    font-size: 1.25rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
+    line-height: 0.5;
     margin-bottom: 0;
 }

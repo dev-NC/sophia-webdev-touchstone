@@ -11,13 +11,26 @@
 
 .about-section .flex-container {
     display: flex;
-    align-items: flex-start;
     gap: 2rem;
-    margin: 0 auto;
 }
 
 .about-us-content {
     flex: 1;
+}
+
+.about-us-content h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-title-weight);
+    font-size: var(--font-title-size);
+    text-align: left;
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
+}
+
+.about-us-content p {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
 }
 
 .about-section .right-column {
@@ -27,9 +40,13 @@
     gap: 2rem;
 }
 
-.business-hours-content,
-.contact-us-content {
-    flex: 1;
+.business-hours-content h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-title-weight);
+    font-size: var(--font-title-size);
+    text-align: left;
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
 }
 
 .business-hours-grid {
@@ -38,8 +55,25 @@
     gap: 0.5rem 1.5rem;
 }
 
+.business-hours-grid dt {
+    font-family: var(--font-body-strong);
+    font-weight: var(--font-body-strong-weight);
+    font-size: var(--font-body-strong-size);
+}
+
+.business-hours-grid dd {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
+}
+
 .contact-us-content h2 {
-    font-size: 1.5rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-title-weight);
+    font-size: var(--font-title-size);
+    text-align: left;
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
 }
 
 .contact-us-content form {
@@ -53,19 +87,28 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-captions);
+    font-weight: var(--font-captions-weight);
+    font-size: var(--font-captions-size);
     margin-top: 0.25rem;
 }
 
 .contact-us-content input[type="text"],
 .contact-us-content input[type="email"] {
-    max-width: 300px;
+    max-width: 350px;
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
     border-radius: 4px;
     margin-top: 0.25rem;
     padding: 0.5rem 1rem;
 }
 
 .contact-us-content textarea {
-    max-width: 300px;
+    max-width: 350px;
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
     border-radius: 4px;
     margin-top: 0.25rem;
     padding: 0.5rem 1rem;
@@ -73,14 +116,20 @@
 }
 
 .contact-us-bottom {
-    max-width: 300px;
+    max-width: 350px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-.contact-us-content input[type="checkbox"] {
+.contact-us-bottom .checkbox-label {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
+}
+
+.contact-us-bottom input[type="checkbox"] {
     height: 1.1rem;
     width: 1.1rem;
     cursor: pointer;

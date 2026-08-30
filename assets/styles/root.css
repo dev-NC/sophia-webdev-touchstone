@@ -67,6 +67,8 @@
 }
 
 html {
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
     font-size: 62.4%;
     color: var(--default-font-color);
     background-color: var(--main-background-color);

@@ -3,7 +3,7 @@
 @import "root.css" layer(root);
 
 footer {
-    border-top: 2px solid black;
+    border-top: 2px solid;
 }
 
 footer .flex-container {
@@ -21,6 +21,12 @@ footer .flex-container {
     padding: 2rem;
 }
 
+.footer-nav h2 {
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
+    font-size: var(--font-subtitle-size);
+}
+
 .footer-nav ul {
     list-style: none;
     padding: 0;
@@ -33,6 +39,9 @@ footer .flex-container {
 .footer-nav a {
     text-decoration: none;
     color: var(--highlight-color);
+    font-family: var(--font-captions);
+    font-weight: var(--font-captions-weight);
+    font-size: var(--font-captions-size);
 }
 
 .footer-nav a:hover {
@@ -44,27 +53,33 @@ footer .flex-container {
 }
 
 .footer-newsletter h2 {
-    font-size: 1.5rem;
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-subtitle-weight);
+    font-size: var(--font-subtitle-size);
 }
 
 .footer-newsletter form {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    font-size: 1rem;
 }
 
 .footer-newsletter label {
     flex: 1;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-captions);
+    font-weight: var(--font-captions-weight);
+    font-size: var(--font-captions-size);
 }
 
 .footer-newsletter input[type="email"] {
-    width: 100%;
     border-radius: 4px;
     margin-top: 0.25rem;
     padding: 0.5rem 1rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
 }
 
 .footer-newsletter input[type="submit"] {

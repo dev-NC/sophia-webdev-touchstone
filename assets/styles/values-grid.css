@@ -10,11 +10,13 @@
 }
 
 .values-section h2 {
+    font-family: var(--font-title);
+    font-weight: var(--font-title-weight);
+    font-size: var(--font-title-size);
     text-align: left;
-    font-size: 2rem;
     margin-bottom: 2.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid;
 }
 
 .values-grid {
@@ -38,12 +40,16 @@
 }
 
 .value-card h3 {
-    font-size: 1.25rem;
+    font-family: var(--font-body-strong);
+    font-weight: var(--font-body-strong-weight);
+    font-size: var(--font-body-strong-size);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
 .value-card p {
-    line-height: 1.6;
+    font-family: var(--font-body);
+    font-weight: var(--font-body-weight);
+    font-size: var(--font-body-size);
     margin: 0;
 }
