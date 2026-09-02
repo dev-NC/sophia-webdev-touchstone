@@ -1,4 +1,4 @@
-@layer root, header, footer, promo, category, card, product, values-grid, about;
+@layer root, header, footer, promo, category, card, cart, values-grid, about;
 
 @import "root.css" layer(root);
 @import "header.css" layer(header);
@@ -6,6 +6,6 @@
 @import "promo.css" layer(promo);
 @import "category.css" layer(category);
 @import "card.css" layer(card);
-@import "product.css" layer(product);
+@import "cart.css" layer(cart);
 @import "values-grid.css" layer(values-grid);
 @import "about.css" layer(about);
