@@ -65,17 +65,3 @@ nav a {
 nav a:hover {
     color: var(--link-hover-color);
 }
-
-.header-lower .fa-cart-shopping {
-    font-size: var(--font-subtitle-size);
-    transition: var(--simple-transition);
-    box-shadow: var(--shadow-vsm);
-
-}
-
-.header-lower .fa-cart-shopping:hover {
-    cursor: pointer;
-    color: var(--hover-color);
-    transform: var(--simple-transform);
-    box-shadow: var(--shadow-sm);
-}
