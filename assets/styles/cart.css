@@ -87,6 +87,32 @@
     margin: 1rem 0;
 }
 
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    transition: var(--simple-transition);
+}
+
+.cart-item:hover {
+    transform: var(--simple-transform);
+    box-shadow: var(--shadow-vsm);
+}
+
+.cart-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item h2 {
+    font-family: var(--font-body-strong);
+    font-weight: var(--font-body-strong-weight);
+    font-size: var(--font-body-strong-size);
+}
+
 .empty-cart {
     display: flex;
     flex-direction: column;
