@@ -7,7 +7,16 @@ subscribeBtn?.addEventListener('click', () => {
 const feedbackSubmitBtn = document.querySelector('.contact-us-content input[type="submit"]');
 
 feedbackSubmitBtn?.addEventListener('click', () => {
-    alert('Thank you for your message.');
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const feedback = document.getElementById('feedback').value;
+    const customOrder = document.getElementById('custom-order').value;
+
+    const customerInfo = { name, email, feedback, customOrder };
+
+    localStorage.setItem(name, JSON.stringify(customerInfo));
+
+    alert(`Thank you for your message, ${name}.`);
 });
 
 var cartItems = JSON.parse(sessionStorage.getItem("cartItems")) || [];
