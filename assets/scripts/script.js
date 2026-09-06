@@ -11,6 +11,17 @@ feedbackSubmitBtn?.addEventListener('click', () => {
 });
 
 var cartItems = JSON.parse(sessionStorage.getItem("cartItems")) || [];
+const promoCtaBtn = document.querySelector('.cta-btn');
+
+promoCtaBtn?.addEventListener('click', function(e) {
+    const itemName = this.getAttribute('data-item-name');
+    const imageSource = this.getAttribute('data-image-source');
+
+    addToCart(itemName, imageSource);
+
+    alert('Your item has been added to the cart');
+});
+
 const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
 
 addToCartBtns?.forEach(btn => btn.addEventListener('click', function(e) {
