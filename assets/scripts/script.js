@@ -1,7 +1,7 @@
 const subscribeBtn = document.querySelector('.footer-newsletter input[type="submit"]');
 
 subscribeBtn?.addEventListener('click', () => {
-    alert('Thank you for subsribing.');
+    alert('Thank you for subscribing.');
 });
 
 const feedbackSubmitBtn = document.querySelector('.contact-us-content input[type="submit"]');
@@ -47,14 +47,15 @@ const clearCartBtn = document.querySelector('.clear-cart-btn');
 clearCartBtn?.addEventListener('click', () => {
     clearCart();
     refreshCart();
+    alert('Cart cleared!');
 });
 
 const processOrderBtn = document.querySelector('.process-order-btn');
 
 processOrderBtn?.addEventListener('click', () => {
-    alert('Thank you for your order.');
     clearCart();
     refreshCart();
+    alert('Thank you for your order.');
 });
 
 const cartModal = document.querySelector('.cart-modal');
